@@ -1,18 +1,22 @@
 [
   {
-    "key": "Home",
+    "key": "Anasayfa",
     "url": "/"
   },
   {
-    "key": "About Us",
+    "key": "Servislerimiz",
+    "url": "/reviews/"
+  },
+  {
+    "key": "Hakkımızda",
     "url": "/about/"
   },
   {
-    "key": "Projects",
+    "key": "Galeri",
     "url": "/projects/"
   },
   {
-    "key": "Reviews",
-    "url": "/reviews/"
+    "key": "İletişim",
+    "url": "/contact/"
   }
 ]

@@ -1,339 +1,388 @@
 ---
-import client from "@data/client.json";
+
 ---
 
 <!-- ============================================ --><!--                   Footer                     --><!-- ============================================ -->
-<footer id="footer">
-  <div class="container">
-    <div class="left-section">
-      <a class="logo" href="/"
-        ><img
+<footer id="cs-footer-272">
+  <div class="cs-container">
+    <!-- Logo Group -->
+    <div class="cs-logo-group">
+      <a aria-label="go back to home" class="cs-logo" href="">
+        <!-- Remove the light class if you don't need the dark logo -->
+        <img
+          class="cs-logo-img"
+          aria-hidden="true"
           loading="lazy"
           decoding="async"
-          src="/assets/svgs/logo-white.svg"
+          src="/assets/svgs/logo-black.svg"
           alt="logo"
-          width="264"
-          height="78"
-        /></a
-      >
-      <p>
-        Extra content if you need it, if not you can delete this whole p tag. I
-        usually do.
+          width="240"
+          height="32"
+        />
+        <!-- Lighter Dark Mode Logo, remove if not needed -->
+        <img
+          class="cs-logo-img dark"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Footer/logo-light.svg"
+          alt="logo"
+          width="240"
+          height="32"
+        />
+      </a>
+      <p class="cs-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum
+        tincidunt vitae velit dolor cras tellus nisl habitant. Consectetur
+        pellentesque dignissim sed amet.
       </p>
-    </div>
-    <div class="right-section">
-      <div class="lists">
-        <ul>
-          <li>
-            <h2>Information</h2>
-          </li>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/about">About Us</a>
-          </li>
-          <li>
-            <a href="/projects">Projects</a>
-          </li>
-          <li>
-            <a href="/testimonials">Reviews</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h2>Services</h2>
-          </li>
-          <li>Service1</li>
-          <li>Service2</li>
-          <li>Service4</li>
-          <li>Service5</li>
-        </ul>
-        <ul>
-          <li>
-            <h2>Contact</h2>
-          </li>
-          <li>
-            <a href="/contact">
-              {client.address.lineOne}<br />
-              {client.address.lineTwo}<br />
-              {client.address.city}
-              {client.address.state}
-              {client.address.zip}
-            </a>
-          </li>
-          <li>
-            <a href={`tel:${client.phoneForTel}`}>
-              T:
-              {client.phoneFormatted}
-            </a>
-          </li>
-          <li>
-            <a href={`mailto:${client.email}`}>Click to Email</a>
-          </li>
-        </ul>
+      <div class="cs-social">
+        <a class="cs-social-link" aria-label="visit google profile" href="">
+          <img
+            class="cs-social-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg"
+            alt="google"
+            width="11"
+            height="11"
+          />
+        </a>
+        <a class="cs-social-link" aria-label="visit facebook profile" href="">
+          <img
+            class="cs-social-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg"
+            alt="facebook"
+            width="6"
+            height="11"
+          />
+        </a>
+        <a class="cs-social-link" aria-label="visit instagram profile" href="">
+          <img
+            class="cs-social-img"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg"
+            alt="instagram"
+            width="11"
+            height="11"
+          />
+        </a>
       </div>
     </div>
-  </div>
-
-  <div class="credit">
-    <span>Designed and Hand Coded by</span>
-    <a href="/" target="_blank" rel="noopener">Your Company Name</a>
-    <span class="copyright"> Copyright 2023 - Present</span>
+    <!-- Links -->
+    <ul class="cs-nav">
+      <li class="cs-nav-li">
+        <span class="cs-header">Sayfalar</span>
+      </li>
+      <li class="cs-nav-li">
+        <a class="cs-nav-link" href="">Hakkımızda</a>
+      </li>
+      <li class="cs-nav-li">
+        <a class="cs-nav-link" href="">Servislerimiz</a>
+      </li>
+      <li class="cs-nav-li">
+        <a class="cs-nav-link" href="">Galeri</a>
+      </li>
+      <li class="cs-nav-li">
+        <a class="cs-nav-link" href="">İletişim</a>
+      </li>
+    </ul>
+    <ul class="cs-nav">
+      <li class="cs-nav-li">
+        <span class="cs-header">Servisler</span>
+      </li>
+      <li class="cs-nav-li">
+        <a class="cs-nav-link" href="">Lüks Kompleks Tasarımı</a>
+      </li>
+      <li class="cs-nav-li">
+        <a class="cs-nav-link" href="">Ticari Kompleks Tasarımı</a>
+      </li>
+      <li class="cs-nav-li">
+        <a class="cs-nav-link" href="">Restorasyon ve Yenileme</a>
+      </li>
+      <li class="cs-nav-li">
+        <a class="cs-nav-link" href="">Özel Resort ve Otel Projeleri</a>
+      </li>
+    </ul>
+    <!-- Contact Info -->
+    <ul class="cs-contact">
+      <li class="cs-nav-li">
+        <span class="cs-header">İletişim</span>
+      </li>
+      <li class="cs-contact-li">
+        <a class="cs-contact-link cs-address" href="">
+          Saltak Caddesi, <br /> Merkezefendi, Denizli
+        </a>
+      </li>
+      <li class="cs-contact-li">
+        <a class="cs-contact-link" href="tel: 123-456-7890">(123) 456-7890</a>
+      </li>
+      <li class="cs-contact-li">
+        <a class="cs-contact-link" href="mailto:info@codestitch.com"
+          >hello@osmangund.com</a
+        >
+      </li>
+    </ul>
   </div>
 </footer>
 
 <style lang="less">
-  /* Mobile */
-@media only screen and (min-width: 0em) {
-  #footer {
-    font-size: ~"min(4vw, 1.2em)";
-    padding: (84/16rem) 0 (20/16rem);
-    background: #1c1c1c;
+  /*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
 
-    .left-section {
-      text-align: center;
-      margin: auto;
-      margin-bottom: (50/16rem);
-      .logo {
-        text-align: center;
-        width: auto;
-        height: (32/16em);
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #cs-footer-272 {
+      padding: var(--sectionPadding);
+
+      .cs-container {
+        width: 100%;
+        /* reset on tablet */
+        max-width: (550/16rem);
         margin: auto;
-        margin-bottom: (30/16em);
-        display: inline-block;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        column-gap: (88/16rem);
+        row-gap: (32/16rem);
+      }
 
-        img {
-          width: auto;
-          height: 100%;
+      .cs-logo-group {
+        /* takes up all the space, lets the other ul's wrap below it */
+        width: 100%;
+        position: relative;
+      }
+
+      .cs-logo {
+        /* 210px - 240px */
+        width: clamp(25.25rem, 16vw, 30rem);
+        height: auto;
+        display: block;
+        /* 28px - 44px */
+        margin-bottom: clamp(1.75rem, 4.17vw, 2.75rem);
+      }
+
+      .cs-logo-img {
+        width: 100%;
+        height: auto;
+
+        &.dark {
+          display: none;
+        }
+      }
+      .cs-social {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: (12/16rem);
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .cs-social-link {
+        width: (24/16rem);
+        height: (24/16rem);
+        background-color: #4e4b66;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        transition:
+          transform 0.3s,
+          background-color 0.3s;
+
+        &:hover {
+          background-color: #1a1a1a;
+          transform: translateY(-0.1875rem);
+        }
+      }
+
+      .cs-social-img {
+        height: (13/16rem);
+        width: auto;
+        display: block;
+      }
+
+      /* Navigation Links */
+      .cs-nav {
+        padding: 0;
+        margin: 0;
+      }
+
+      .cs-nav-li {
+        list-style: none;
+        margin-bottom: (16/16rem);
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      .cs-header {
+        font-size: (16/16rem);
+        line-height: 1.5em;
+        font-weight: 700;
+        color: var(--bodyTextColor);
+        position: relative;
+
+        &:after {
+          content: "";
+          width: (32/16rem);
+          height: (4/16rem);
+          margin: (16/16rem) auto (24/16rem) 0;
+          background: var(--primary);
+          opacity: 1;
+          position: relative;
           display: block;
         }
       }
 
-      p {
-        font-size: (14/16rem);
-        line-height: 27/14;
-        text-align: center;
-        width: 100%;
-        width: 307/14rem;
-        margin: auto;
-        color: #fff;
-        opacity: 0.9;
-      }
-    }
+      .cs-nav-link {
+        font-size: (16/16rem);
+        text-decoration: none;
+        line-height: 1.5em;
+        color: var(--bodyTextColor);
+        position: relative;
 
-    .right-section {
-      width: 96%;
-      max-width: (407/16rem);
-      margin: auto;
-      .lists {
-        width: 96%;
-        max-width: (307/16rem);
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        ul {
-          margin-top: 0;
-          margin-bottom: 0;
-          padding: 0;
+        &:before {
+          /* underline */
+          content: "";
+          width: 0%;
+          height: (2/16rem);
+          background: var(--bodyTextColor);
+          opacity: 1;
+          position: absolute;
+          display: block;
+          bottom: (-2/16rem);
+          left: 0;
+          transition: width 0.3s;
+        }
 
-          &:nth-of-type(3) {
-            margin-top: (50/16rem);
-            li {
-              margin-bottom: (16/16rem);
-              display: flex;
-              justify-content: flex-start;
-              align-items: center;
-
-              &:last-of-type {
-                margin-bottom: 0;
-              }
-            }
-          }
-
-          li {
-            font-size: (18/16rem);
-            list-style: none;
-            margin-bottom: (12/16rem);
-            color: #fff;
-            opacity: 0.9;
-
-            a {
-              line-height: 21/18em;
-              text-decoration: none;
-              color: #fff;
-              transition: color 0.3s;
-              &:hover {
-                color: var(--primary);
-              }
-            }
-          }
-          h2 {
-            font-size: (18/16rem);
-            font-weight: bold;
-            line-height: 21/18em;
-            text-transform: uppercase;
-            margin-bottom: (37/16rem);
-            color: #fff;
-            position: relative;
-
-            &:before {
-              content: "";
-              width: (97/16rem);
-              height: (2/16rem);
-              background: var(--primary);
-              opacity: 1;
-              display: block;
-              position: absolute;
-              bottom: (-16/16rem);
-              left: 0;
-            }
+        &:hover {
+          &:before {
+            width: 100%;
           }
         }
       }
 
-      .buttons {
-        display: flex;
-        justify-content: center;
-      }
-
-      .cs-button-solid {
-        width: (250/16rem);
-        height: (53/16rem);
+      /* Contact Links */
+      .cs-contact {
         margin: 0;
-        padding-top: (3/16rem);
+        padding: 0;
+        width: 35%;
       }
-    }
 
-    .credit {
-      font-size: (16/16rem);
-      line-height: (36/16rem);
-      text-align: center;
-      width: 96%;
-      margin: auto;
-      margin-top: (100/16rem);
-      color: #fff;
+      .cs-contact-li {
+        list-style: none;
+        margin-bottom: (0/16rem);
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
 
-      a {
+      .cs-contact-link {
         font-size: (16/16rem);
         text-decoration: none;
-        color: var(--primary);
+        line-height: 1.5em;
+        text-align: left;
+        color: var(--bodyTextColor);
+        display: inline-block;
 
         &:hover {
           text-decoration: underline;
         }
       }
 
-      .copyright {
+      .cs-address {
         font-size: (16/16rem);
-        display: block;
+        margin-bottom: (20/16rem);
       }
     }
   }
-}
 
-/* Small Desktop */
-@media only screen and (min-width: 64em) {
-  #footer {
-    font-size: ~"min(1.2vw, 1em)";
-    .container {
-      width: 96%;
-      max-width: (1320/16rem);
-      margin: auto;
-      padding: 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: nowrap;
-    }
-
-    .left-section {
-      text-align: left;
-      width: (409/16rem);
-      margin: 0;
-
-      .logo {
-        text-align: left;
-        height: (40/16rem);
-        margin-left: 0;
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #cs-footer-272 {
+      .cs-container {
+        max-width: (1280/16rem);
+        row-gap: 0;
       }
 
-      p {
-        text-align: left;
-        margin-left: 0;
+      .cs-contact {
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: none;
       }
-    }
 
-    .right-section {
-      width: (609/16rem);
-      max-width: none;
-      margin: 0;
-      .lists {
-        width: 96%;
-        max-width: (769/16rem);
-        max-width: initial;
+      .cs-contact-li {
         margin: 0;
+      }
+    }
+  }
 
-        ul {
-          &:nth-of-type(3) {
-            margin-top: 0;
+  /* Small Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #cs-footer-272 {
+      .cs-container {
+        /* pushes all flex children to the top */
+        align-items: flex-start;
+        justify-content: flex-end;
+      }
 
-            li:first-of-type {
-              margin-bottom: 0;
-            }
-          }
+      .cs-logo-group {
+        /* pushes everything to the right of it as far as possible in a flexbox */
+        margin-right: auto;
+        width: auto;
+        max-width: (305/16rem);
+      }
 
-          li {
-            a {
-              position: relative;
+      .cs-text {
+        width: 100%;
+        margin-bottom: clamp(1.75rem, 4.17vw, 2.75rem);
+      }
 
-              &:before {
-                content: "";
-                width: 0%;
-                height: (2/16rem);
-                background: var(--primary);
-                opacity: 1;
-                display: block;
-                position: absolute;
-                bottom: (-3/16rem);
-                left: 0;
-                transition: width 0.3s;
-              }
+      .cs-social {
+        flex-direction: row;
+        position: relative;
+        top: auto;
+        right: auto;
+      }
 
-              &:hover {
-                &:before {
-                  width: 100%;
-                }
-              }
-            }
+      .cs-contact {
+        width: auto;
+      }
+    }
+  }
+
+  /* Dark Mode */
+  @media only screen and (min-width: 0rem) {
+    body.dark-mode {
+      #cs-footer-272 {
+        background-color: rgba(0, 0, 0, 0.2);
+        .cs-text,
+        .cs-header,
+        .cs-nav-link,
+        .cs-contact-link {
+          color: var(--bodyTextColorWhite);
+
+          &:before {
+            background-color: var(--bodyTextColorWhite);
           }
         }
-      }
 
-      .buttons {
-        justify-content: flex-start;
-      }
-    }
-
-    .credit {
-      .copyright {
-        display: inline-block;
+        .cs-copyright {
+          color: #b4b2c7;
+        }
       }
     }
   }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode {
-    #footer {
-      background: #061623;
-    }
-  }
-}
-
 </style>

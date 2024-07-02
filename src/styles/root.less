@@ -8,8 +8,8 @@
 @media only screen and (min-width: 0em) {
   // Website colors
   :root {
-    --primary: #ffba19;
-    --primaryLight: #ffd675;
+    --primary: #007dff;
+    --primaryLight: hsl(211, 100%, 60%);
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
@@ -24,6 +24,10 @@
 
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    /* 30px - 50px top 60-100px bottom */
+    --sectionPadding2: clamp(1.875rem, 3.91vw, 3.125rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    /* 30px - 50px top and bottom */
+    --sectionPadding3: clamp(1.875rem, 3.91vw, 3.125rem) 1rem;
   }
 
   // Text styles - can be replaced using CodeStitch's "Content Flair" Stitches
@@ -67,7 +71,7 @@
     padding: 0 (30/16rem);
 
     // Transition Properties
-    color: #000;
+    color: #fff;
     background-color: var(--primary);
     display: inline-block;
     position: relative;
@@ -301,7 +305,3 @@
     }
   }
 }
-
-
-
-
