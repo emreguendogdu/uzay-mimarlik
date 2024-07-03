@@ -152,8 +152,8 @@
       }
 
       .cs-logo {
-        /* 210px - 240px */
-        width: clamp(25.25rem, 16vw, 30rem);
+        // 105 - 120px
+        width: clamp(12.5rem, 8vw, 15rem);
         height: auto;
         display: block;
         /* 28px - 44px */
@@ -307,6 +307,11 @@
         row-gap: 0;
       }
 
+      .cs-logo {
+        /* 210px - 240px */
+        width: clamp(25.25rem, 16vw, 30rem);
+      }
+
       .cs-contact {
         flex-direction: row;
         justify-content: space-between;
@@ -367,6 +372,10 @@
           &:before {
             background-color: var(--bodyTextColorWhite);
           }
+        }
+
+        .cs-logo {
+          filter: invert(0.3) brightness(2) contrast(1.2);
         }
 
         .cs-copyright {
