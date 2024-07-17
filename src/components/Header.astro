@@ -31,19 +31,38 @@ import navData from "@data/navData.json"
       <div class="cs-ul-wrapper">
         <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
           {
-            navData.map((entry) => (
-              <li class="cs-li">
-                <a
-                  href={entry.url}
-                  class:list={[
-                    "cs-li-link",
-                    { "cs-active": Astro.url.pathname === entry.url },
-                  ]}
-                >
-                  {entry.key}
-                </a>
-              </li>
-            ))
+            navData.map((entry) => {
+              if (entry.key === "Hizmetlerimiz") {
+                return (
+                  <>
+                    <a
+                      href={entry.url}
+                      class:list={[
+                        "cs-li-link",
+                        { "cs-active": Astro.url.pathname === entry.url },
+                      ]}
+                    >
+                      {entry.key}
+                      {"  "}
+                      <strong>∨</strong>
+                    </a>
+                  </>
+                )
+              }
+              return (
+                <li class="cs-li">
+                  <a
+                    href={entry.url}
+                    class:list={[
+                      "cs-li-link",
+                      { "cs-active": Astro.url.pathname === entry.url },
+                    ]}
+                  >
+                    {entry.key}
+                  </a>
+                </li>
+              )
+            })
           }
         </ul>
       </div>
