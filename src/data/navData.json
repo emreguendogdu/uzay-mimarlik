@@ -5,7 +5,25 @@
   },
   {
     "key": "Hizmetlerimiz",
-    "url": "/#"
+    "url": "/#",
+    "children": [
+      {
+        "key": "Lüks Kompleks Tasarımı",
+        "url": "/#"
+      },
+      {
+        "key": "Ticari Kompleks Tasarımı",
+        "url": "/#"
+      },
+      {
+        "key": "Restorasyon ve Yenileme",
+        "url": "/#"
+      },
+      {
+        "key": "Özel Resort ve Otel Projeleri",
+        "url": "/#"
+      }
+    ]
   },
   {
     "key": "Hakkımızda",
