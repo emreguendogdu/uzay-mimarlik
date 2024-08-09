@@ -21,11 +21,6 @@
         />
         <!-- Lighter Dark Mode Logo, remove if not needed -->
       </a>
-      <p class="cs-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum
-        tincidunt vitae velit dolor cras tellus nisl habitant. Consectetur
-        pellentesque dignissim sed amet.
-      </p>
       <div class="cs-social">
         <a class="cs-social-link" aria-label="visit google profile" href="">
           <img
@@ -63,63 +58,63 @@
             height="11"
           />
         </a>
-      </div>
+        <a href="https://laodikyaweb.com" class="credit-link">Laodikya Web ® 2024</a>
     </div>
-    <!-- Links -->
-    <ul class="cs-nav">
-      <li class="cs-nav-li">
-        <span class="cs-header">Sayfalar</span>
-      </li>
-      <li class="cs-nav-li">
-        <a class="cs-nav-link" href="">Hakkımızda</a>
-      </li>
-      <li class="cs-nav-li">
-        <a class="cs-nav-link" href="">Servislerimiz</a>
-      </li>
-      <li class="cs-nav-li">
-        <a class="cs-nav-link" href="">Galeri</a>
-      </li>
-      <li class="cs-nav-li">
-        <a class="cs-nav-link" href="">İletişim</a>
-      </li>
-    </ul>
-    <ul class="cs-nav">
-      <li class="cs-nav-li">
-        <span class="cs-header">Servisler</span>
-      </li>
-      <li class="cs-nav-li">
-        <a class="cs-nav-link" href="">Lüks Kompleks Tasarımı</a>
-      </li>
-      <li class="cs-nav-li">
-        <a class="cs-nav-link" href="">Ticari Kompleks Tasarımı</a>
-      </li>
-      <li class="cs-nav-li">
-        <a class="cs-nav-link" href="">Restorasyon ve Yenileme</a>
-      </li>
-      <li class="cs-nav-li">
-        <a class="cs-nav-link" href="">Özel Resort ve Otel Projeleri</a>
-      </li>
-    </ul>
-    <!-- Contact Info -->
-    <ul class="cs-contact">
-      <li class="cs-nav-li">
-        <span class="cs-header">İletişim</span>
-      </li>
-      <li class="cs-contact-li">
-        <a class="cs-contact-link cs-address" href="">
-          Saltak Caddesi, <br /> Merkezefendi, Denizli
-        </a>
-      </li>
-      <li class="cs-contact-li">
-        <a class="cs-contact-link" href="tel: 123-456-7890">(123) 456-7890</a>
-      </li>
-      <li class="cs-contact-li">
-        <a class="cs-contact-link" href="mailto:info@codestitch.com"
-          >hello@osmangund.com</a
-        >
-      </li>
-    </ul>
   </div>
+  <!-- Links -->
+  <ul class="cs-nav">
+    <li class="cs-nav-li">
+      <span class="cs-header">Sayfalar</span>
+    </li>
+    <li class="cs-nav-li">
+      <a class="cs-nav-link" href="">Hakkımızda</a>
+    </li>
+    <li class="cs-nav-li">
+      <a class="cs-nav-link" href="">Servislerimiz</a>
+    </li>
+    <li class="cs-nav-li">
+      <a class="cs-nav-link" href="">Galeri</a>
+    </li>
+    <li class="cs-nav-li">
+      <a class="cs-nav-link" href="">İletişim</a>
+    </li>
+  </ul>
+  <ul class="cs-nav">
+    <li class="cs-nav-li">
+      <span class="cs-header">Servisler</span>
+    </li>
+    <li class="cs-nav-li">
+      <a class="cs-nav-link" href="">Lüks Kompleks Tasarımı</a>
+    </li>
+    <li class="cs-nav-li">
+      <a class="cs-nav-link" href="">Ticari Kompleks Tasarımı</a>
+    </li>
+    <li class="cs-nav-li">
+      <a class="cs-nav-link" href="">Restorasyon ve Yenileme</a>
+    </li>
+    <li class="cs-nav-li">
+      <a class="cs-nav-link" href="">Özel Resort ve Otel Projeleri</a>
+    </li>
+  </ul>
+  <!-- Contact Info -->
+  <ul class="cs-contact">
+    <li class="cs-nav-li">
+      <span class="cs-header">İletişim</span>
+    </li>
+    <li class="cs-contact-li">
+      <a class="cs-contact-link cs-address" href="">
+        Saltak Caddesi, <br /> Merkezefendi, Denizli
+      </a>
+    </li>
+    <li class="cs-contact-li">
+      <a class="cs-contact-link" href="tel: 123-456-7890">(123) 456-7890</a>
+    </li>
+    <li class="cs-contact-li">
+      <a class="cs-contact-link" href="mailto:info@codestitch.com"
+        >hello@osmangund.com</a
+      >
+    </li>
+  </ul>
 </footer>
 
 <style lang="less">
@@ -131,6 +126,14 @@
   @media only screen and (min-width: 0rem) {
     #cs-footer-272 {
       padding: var(--sectionPadding);
+
+      .credit-link {
+        color: #1a1a1a;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
 
       .cs-container {
         width: 100%;
