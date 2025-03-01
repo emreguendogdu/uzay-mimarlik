@@ -1,15 +1,15 @@
 {
-	"name": "Uzay Mimarlık",
-	"email": "hello@osmangund.tech",
-	"phoneForTel": "555-779-4407",
-	"phoneFormatted": "(555) 779-4407",
-	"address": {
-		"lineOne": "First Address Line",
-		"lineTwo": "Second Address Line",
-		"city": "Denizli",
-		"state": "CO",
-		"zip": "80206",
-		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
-	},
-	"domain": "www.uzaymimarlikdemo.netlify.app"
+  "name": "Uzay Mimarlık",
+  "email": "hello@emregnd.com",
+  "phoneForTel": "+905362221429",
+  "phoneFormatted": "0 536 222 1429",
+  "address": {
+    "lineOne": "First Address Line",
+    "lineTwo": "Second Address Line",
+    "city": "Denizli",
+    "state": "CO",
+    "zip": "80206",
+    "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+  },
+  "domain": "www.uzaymimarlikdemo.netlify.app"
 }

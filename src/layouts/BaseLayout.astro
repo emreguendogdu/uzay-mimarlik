@@ -4,7 +4,6 @@ import client from "@data/client.json"
 import Header from "@components/Header.astro"
 import Footer from "@components/Footer.astro"
 import "@styles/root.less"
-import "@styles/dark.less"
 
 const { description, title } = Astro.props
 ---
@@ -42,7 +41,7 @@ const { description, title } = Astro.props
     <meta property="twitter:image" content={`/assets/images/og-logo-m.webp`} />
     <meta property="twitter:image:width" content="600" />
     <meta property="twitter:image:height" content="315" />
-    
+
     <!-- Preloads -->
     <link rel="preload" as="image" href="/assets/images/landing.webp" />
     <!--Favicons-->
